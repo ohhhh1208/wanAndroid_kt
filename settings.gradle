@@ -14,3 +14,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "wanAndroid_kt"
 include ':app'
+include ':network'
+include ':model'
+include ':core'
