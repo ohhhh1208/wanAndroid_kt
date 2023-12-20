@@ -10,7 +10,7 @@ import com.ouo.model.room.entity.HotKey
 @Dao
 interface HotKeyDao {
 
-    @Query("SELECT * FROM hot_key order by uid desc")
+/*    @Query("SELECT * FROM hot_key order by uid desc")
     suspend fun getHotKeyList(): List<HotKey>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
@@ -29,5 +29,5 @@ interface HotKeyDao {
     suspend fun deleteList(HotKeyList: List<HotKey>): Int
 
     @Query("DELETE FROM hot_key")
-    suspend fun deleteAll()
+    suspend fun deleteAll()*/
 }

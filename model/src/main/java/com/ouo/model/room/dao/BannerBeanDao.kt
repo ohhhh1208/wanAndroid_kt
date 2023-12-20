@@ -9,7 +9,7 @@ import com.ouo.model.room.entity.BannerBean
 @Dao
 interface BannerBeanDao {
 
-    @Query("SELECT * FROM banner_bean order by uid desc")
+/*    @Query("SELECT * FROM banner_bean order by uid desc")
     suspend fun getBannerBeanList(): List<BannerBean>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
@@ -28,5 +28,5 @@ interface BannerBeanDao {
     suspend fun deleteList(BannerBeanList: List<BannerBean>): Int
 
     @Query("DELETE FROM banner_bean")
-    suspend fun deleteAll()
+    suspend fun deleteAll()*/
 }

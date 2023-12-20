@@ -9,7 +9,7 @@ import com.ouo.model.room.entity.ProjectClassify
 
 @Dao
 interface ProjectClassifyDao {
-    @Query("SELECT * FROM project_classify where order_classify>144999 and order_classify<145050")
+/*    @Query("SELECT * FROM project_classify where order_classify>144999 and order_classify<145050")
     suspend fun getAllProject(): List<ProjectClassify>
 
     @Query("SELECT * FROM project_classify where order_classify>189999 and order_classify<190020")
@@ -28,5 +28,5 @@ interface ProjectClassifyDao {
     suspend fun deleteList(projectClassifyList: List<ProjectClassify>): Int
 
     @Query("DELETE FROM project_classify")
-    suspend fun deleteAll()
+    suspend fun deleteAll()*/
 }

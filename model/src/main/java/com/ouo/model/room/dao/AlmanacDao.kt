@@ -9,7 +9,7 @@ import com.ouo.model.room.entity.Almanac
 @Dao
 interface AlmanacDao {
 
-    @Query("SELECT * FROM almanac order by uid desc")
+/*    @Query("SELECT * FROM almanac order by uid desc")
     suspend fun getAlmanacList(): List<Almanac>
 
     @Query("SELECT * FROM almanac where julian_day = :julianDay")
@@ -31,5 +31,5 @@ interface AlmanacDao {
     suspend fun deleteList(almanacList: List<Almanac>): Int
 
     @Query("DELETE FROM almanac")
-    suspend fun deleteAll()
+    suspend fun deleteAll()*/
 }

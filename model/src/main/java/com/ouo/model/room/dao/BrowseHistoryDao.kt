@@ -9,7 +9,7 @@ import com.ouo.model.room.entity.Article
 
 @Dao
 interface BrowseHistoryDao {
-
+/*
     @Query("SELECT * FROM browse_history")
     suspend fun getAllArticle(): List<Article>
 
@@ -50,6 +50,6 @@ interface BrowseHistoryDao {
     suspend fun deleteAll(type: Int)
 
     @Query("DELETE FROM browse_history where local_type = :type and  chapter_id = :chapterId")
-    suspend fun deleteAll(type: Int, chapterId: Int)
+    suspend fun deleteAll(type: Int, chapterId: Int)*/
 
 }
