@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ivWelcomeBg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WelcomeActivity">
+    android:scaleType="centerCrop"
+    android:contentDescription="@string/app_name"
+    android:orientation="horizontal"
+    android:src="@drawable/img_welcome"
+   />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!-- android:contentDescription
+   内容描述是一条文字描述，用于描述 View 中显示的内容或其功能。
+   这对于视觉受限的用户（如盲人或使用辅助功能的用户）很有帮助，因为他们无法直接观察图像或其他视觉元素。
+   屏幕阅读器等辅助功能工具可以读取内容描述，以便用户了解 View 的含义或功能。-->
