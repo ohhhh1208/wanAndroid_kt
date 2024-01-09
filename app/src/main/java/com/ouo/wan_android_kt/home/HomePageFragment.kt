@@ -1,30 +1,46 @@
 package com.ouo.wan_android_kt.home
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.ouo.wan_android_kt.R
+import androidx.fragment.app.viewModels
+import com.ouo.wan_android_kt.databinding.FragmentHomePageBinding
 
-class HomePageFragment : Fragment() {
+class HomePageFragment : ArticleCollectBaseFragment() {
 
     companion object {
         fun newInstance() = HomePageFragment()
     }
 
-    private lateinit var viewModel: HomePageViewModel
+    private val viewModel by viewModels<HomePageViewModel>()
+    private var binding: FragmentHomePageBinding? = null
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_home_page, container, false)
+    override fun getLayoutView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        attachToRoot: Boolean
+    ): View {
+        binding = FragmentHomePageBinding.inflate(inflater, container, attachToRoot)
+        return binding!!.root
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(HomePageViewModel::class.java)
-        // TODO: Use the ViewModel
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+    }
+
+    override fun refreshData() {
+        TODO("Not yet implemented")
+    }
+
+    override fun initData() {
+        TODO("Not yet implemented")
+    }
+
+    override fun initView() {
+        TODO("Not yet implemented")
     }
 
 }

@@ -12,6 +12,7 @@ import com.ouo.wan_android_kt.databinding.LayoutHomeBottomTabBinding
  * Created by oxq on 2024/1/9.
  */
 
+//在Kotlin中@JvmOverloads注解的作用就是：在有默认参数值的方法中使用@JvmOverloads注解，则Kotlin就会暴露多个重载方法。
 class HomeBottomTabWidget @JvmOverloads constructor(
     context: Context?,
     attrs: AttributeSet? = null,
