@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:name=".App"
@@ -12,22 +12,25 @@
         android:theme="@style/PlayNoActionBar"
         android:usesCleartextTraffic="true"
         tools:replace="android:theme"
-        tools:targetApi="m" >
+        tools:targetApi="m">
+        <activity
+            android:name=".main.MainActivity"
+            android:configChanges="keyboardHidden|keyboard|screenSize|locale|navigation|smallestScreenSize" />
         <activity
             android:name=".WelcomeActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-<!--            通过在清单文件的 <meta-data> 标签中声明 "android.app.shortcuts" 元数据，-->
-<!--            并使用 android:resource 属性引用了一个 XML 文件，您可以在应用程序中定义快捷方式的相关信息。-->
-<!--            todo:添加快捷界面跳转-->
-<!--            <meta-data-->
-<!--                android:name="android.app.shortcuts"-->
-<!--                android:resource="@xml/shortcuts" />-->
+            <!-- 通过在清单文件的 <meta-data> 标签中声明 "android.app.shortcuts" 元数据， -->
+            <!-- 并使用 android:resource 属性引用了一个 XML 文件，您可以在应用程序中定义快捷方式的相关信息。 -->
+            <!-- todo:添加快捷界面跳转 -->
+            <!-- <meta-data -->
+            <!-- android:name="android.app.shortcuts" -->
+            <!-- android:resource="@xml/shortcuts" /> -->
         </activity>
     </application>
 

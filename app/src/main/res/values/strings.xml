@@ -81,5 +81,7 @@
     <string name="static_disabled_message_add_share">Add articles you want to share!</string>
     <string name="static_shortcut_long_label_add_share">New article sharing</string>
     <string name="static_shortcut_short_label_add_share">New share</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
