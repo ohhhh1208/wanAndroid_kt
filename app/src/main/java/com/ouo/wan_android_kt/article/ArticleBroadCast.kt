@@ -28,7 +28,7 @@ object ArticleBroadCast {
     const val COLLECT_RECEIVER = "com.ouo.wan_android_kt.COLLECT"
 
     //静态方法，用于发送文章变化的广播
-    fun sendArticleChangeReceiver(context: Context) {
+    fun sendArticleChangesReceiver(context: Context) {
         val intent = Intent(COLLECT_RECEIVER)
         LocalBroadcastManager.getInstance(context).sendBroadcast(intent)
     }

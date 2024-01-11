@@ -26,7 +26,7 @@ class ProjectFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(ProjectViewModel::class.java)
-        // TODO: Use the ViewModel
+
     }
 
 }

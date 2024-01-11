@@ -5,6 +5,9 @@ import com.ouo.network.service.*
 /**
  * Created by oxq on 2023/12/19.
  */
+
+//object 关键字用于创建单例对象，在该单例对象中定义的方法可以被视为静态方法的等效物，
+// 它们可以在不创建对象实例的情况下直接通过单例对象进行访问。
 object PlayAndroidNetwork {
     private val homePageService = ServiceCreator.create(HomePageService::class.java)
 

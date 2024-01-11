@@ -1,6 +1,5 @@
 package com.ouo.wan_android_kt.home
 
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -25,22 +24,17 @@ class HomePageFragment : ArticleCollectBaseFragment() {
         return binding!!.root
     }
 
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-    }
-
     override fun refreshData() {
-        TODO("Not yet implemented")
+
     }
 
     override fun initData() {
-        TODO("Not yet implemented")
+
     }
 
+
     override fun initView() {
-        TODO("Not yet implemented")
+
     }
 
 }

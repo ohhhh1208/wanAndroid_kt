@@ -15,7 +15,7 @@ import com.ouo.wan_android_kt.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlin.system.exitProcess
 
-
+@AndroidEntryPoint
 class MainActivity : BaseActivity() {
     private lateinit var binding: ActivityMainBinding
     private val viewModel by viewModels<MainViewModel>()
@@ -55,7 +55,7 @@ class MainActivity : BaseActivity() {
 
     private fun exit() {
         if (System.currentTimeMillis() - exitTime > 2000) {
-            showToast("再按一次退出程序")
+            showToast(getString(R.string.exit_program))
             exitTime = System.currentTimeMillis()
         } else {
             exitProcess(0)

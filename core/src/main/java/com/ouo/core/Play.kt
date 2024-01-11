@@ -97,7 +97,7 @@ object Play {
 
     //get() 函数使用 dataStore.readStringData(NICK_NAME) 方法来获取昵称数据，并将其作为属性的值返回。
     // 这意味着每当我们访问 nickname 属性时，它会动态地从 dataStore 中读取最新的昵称数据。
-    val nickname: String
+    val nickName: String
         get() = dataStore.readStringData(NICK_NAME)
     val username: String
         get() = dataStore.readStringData(USERNAME)
